@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Search</title>
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <style>
+
+        .form-control-borderless {
+    border: none;
+}
+
+.form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+body{
+background-image:url(https://speckyboy.com/wp-content/uploads/2018/12/high-resolution-desktop-wallpaper-13.jpg);
+background-repeat : no-repeat;
+background-size : cover;
+}
+
+
+    </style>
+
+</head>
+<body>
+
+<div class="topnav">
+
+        <a href="/" class="active">Search</a>
+         
+         <!--<a href="/service">Services</a>-->
+        <a href="/userlogin" style="float: right;">Logout</a>
+
+    </div>
+
+<br><br><br><br><br><br>
+<div class="container">
+    <br/>
+	<div class="row justify-content-center">
+                        <div class="col-12 col-md-10 col-lg-8">
+                            <form class="card card-sm" action="/reply" method="post">
+                                <div class="card-body row no-gutters align-items-center">
+                                    <div class="col-auto">
+                                        <i class="fas fa-search h4 text-body"></i>
+                                    </div>
+                                    <!--end of col-->
+                                    <div class="col">
+                                        <input class="form-control form-control-lg form-control-borderless" type="search" name="searchword" placeholder="Enter Statement to check Spam or Ham">
+                                    </div>
+                                    <!--end of col-->
+                                    <div class="col-auto">
+                                        <button class="btn btn-lg btn-success" type="submit">Search</button>
+                                        
+                                        <!--<image src="{{ url_for('static',filename='images/voice.png')}}" class="img-fluid" alt="Good AQI 0-50" title="Good AQI 0-50" width="100"/>-->
+
+                                    </div>
+                                    <!--end of col-->
+
+                                </div>
+                            </form>
+                        </div>
+        </div>
+</div>
+
+</body>
+
+</html>
